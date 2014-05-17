@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is used for search people on the twitter and find keywords on the bing and add in the database.
 
-Things you may want to cover:
+Through twitter search we can find inserted user name and his screename and add in to database through add link and we can also create manually people and add into database.
 
-* Ruby version
+and same thing for bing , here we can find keyword through bing api and add into database we can also add manually keyword in database… in case of keyword if keyword already exist in database than it will not search on web but it will display data…
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+here we can also do CRUD operation on the database…
