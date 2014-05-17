@@ -8,7 +8,7 @@
 <%@WebSearchResult.each do |result| %>
 
  
-<%= result.title %> <%= link_to "add", bing_show_path(title: result.title, description: result.description, displayUrl: result.displayUrl) %><br>
+<%= result.title %> <br>
 <%= result.description %><br>
 <%= result.displayUrl %><br>
 <hr>
