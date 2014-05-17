@@ -1,0 +1,28 @@
+<h1>Enter people name for search on twitter</h1>
+
+
+<%= form_for :searchpeople do |f| %>
+  <p>
+    <%= text_field_tag(:username) %>
+  </p>
+ 
+  <p>
+    <%= f.submit "search" , :onclick => 'display'%>
+  </p>
+  <br>
+  
+<% end %>
+
+<br><%= link_to "Home", root_path %>
+<br><%= link_to "Back", users_path %>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+<h1>Enter keyword For Search</h1>
+<%= form_for :bing do |f| %>
+  <p>
+    <%= text_field_tag(:q) %>
+  </p>
+ 
+  <p>
+    <%= f.submit "search" , :onclick => 'search'%>
+  </p>
+  <br>
+  
+<% end %>
+
+<br><%= link_to "Home", root_path %>
+<br><%= link_to "Back", keywords_path %>

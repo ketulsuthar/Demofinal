@@ -1,0 +1,15 @@
+<h1>Twitter user</h1>
+
+<% if @flag == true %>
+	<%= form_for :name do |f| %>	
+		<%  @users.each do | user | %>
+	  	<img url=<%= user.profile_image_url %>>
+			<%= f.label :name, user.name %>
+			</t><%= link_to "add", searchpeople_display_path(name: user.name, screen_name: user.screen_name) %><br>
+		<% end %>
+	<% end %>
+<% else %>
+	<%= "Connection not found" %>
+<% end %>
+<br>
+<%= link_to 'Back', users_path %>

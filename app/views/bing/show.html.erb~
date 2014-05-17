@@ -1,0 +1,20 @@
+<h1>Added user name and Screen name</h1>
+
+<% if @newkey.save %>
+	
+Title:<%= @newkey.title %></br></br>
+Description:<%= @newkey.description %>
+Link:<%= @newkey.displayUrl %>
+<% else %>
+	Error in saving
+<% end %>
+
+<br><br>
+<%= link_to 'Back to Search', root_path %>
+
+
+
+
+
+
+

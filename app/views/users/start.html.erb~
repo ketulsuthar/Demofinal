@@ -1,0 +1,6 @@
+<p>If you want to search people or create people click on link</p>
+<%= link_to 'People', :controller => "users", :action => "index" %>
+
+<br>
+<p>If you want to search keyword or create keyword click on link</p>
+<%= link_to 'Keyword', :controller => "keywords", :action => "index" %>

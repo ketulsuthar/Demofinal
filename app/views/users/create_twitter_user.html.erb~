@@ -1,0 +1,12 @@
+<h1>Added user name and Screen name</h1>
+
+<% if @user.save %>
+	
+User name:<%= @user.name %></br></br>
+Screen name:<%= @user.screen_name %>
+<% else %>
+	Error in saving
+<% end %>
+
+<br><br>
+<%= link_to 'Back to Search', searchpeople_search_path %>

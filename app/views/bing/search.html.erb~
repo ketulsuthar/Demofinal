@@ -1,0 +1,18 @@
+	
+<h1>Bing SearchResult</h1>
+<p><i><u>(There are 20 Results,If you want to add in your database than click on add link)</u></i></p>
+
+<%@WebSearchResult.each do |result| %>
+
+ 
+<%= result.title %> <%= link_to "add", bing_show_path(title: result.title, description: result.description, displayUrl: result.displayUrl) %><br>
+<%= result.description %><br>
+<%= result.displayUrl %><br>
+<hr>
+<br>
+
+<% end %>
+</table>	  
+
+<%= link_to 'Back', keywords_path %>	
+	
